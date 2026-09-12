@@ -477,7 +477,7 @@ private fun TileControls(
             delay(200)
         }
     }
-    Box(Modifier.matchParentSize().background(Color.Black.copy(.36f))) {
+    Box(Modifier.fillMaxSize().background(Color.Black.copy(.36f))) {
         Row(
             Modifier.align(Alignment.Center).fillMaxWidth().padding(horizontal = 10.dp),
             verticalAlignment = Alignment.CenterVertically,
