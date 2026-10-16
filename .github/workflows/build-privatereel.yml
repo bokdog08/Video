@@ -26,6 +26,8 @@ jobs:
           with tarfile.open(fileobj=io.BytesIO(raw)) as tar:
               tar.extractall('workspace',filter='data')
           PY
+      - name: Fix Compose pager API name
+        run: sed -i 's/beyondBoundsPageCount = 1,/beyondViewportPageCount = 1,/' workspace/app/src/main/java/com/privatereel/app/ReelScreen.kt
       - name: Build Android debug APK
         working-directory: workspace
         run: |
