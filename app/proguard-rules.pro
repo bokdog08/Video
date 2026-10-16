@@ -1,3 +1,0 @@
--keepattributes *Annotation*
--keep class kotlinx.serialization.** { *; }
--dontwarn org.checkerframework.**
